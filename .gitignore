@@ -1,0 +1,3 @@
+docker/airflow
+docker/spark
+*.ipynb_checkpoints
