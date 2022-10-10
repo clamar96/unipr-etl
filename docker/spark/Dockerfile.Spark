@@ -1,0 +1,18 @@
+FROM bitnami/spark:3.1.2
+
+USER root
+
+# Get AWS SDK JAR
+RUN curl https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.11.950/aws-java-sdk-bundle-1.11.950.jar --output /opt/bitnami/spark/jars/aws-java-sdk-bundle-1.11.950.jar
+
+# Get Hadoop-AWS JAR
+RUN curl https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.2.0/hadoop-aws-3.2.0.jar --output /opt/bitnami/spark/jars/hadoop-aws-3.2.0.jar
+
+# Get jets3t JAR
+RUN curl https://repo1.maven.org/maven2/net/java/dev/jets3t/jets3t/0.9.4/jets3t-0.9.4.jar --output /opt/bitnami/spark/jars/jets3t-0.9.4.jar
+
+# Get Postgres JAR
+RUN curl https://repo1.maven.org/maven2/org/postgresql/postgresql/9.4.1207/postgresql-9.4.1207.jar --output /opt/bitnami/spark/jars/postgresql-9.4.1207.jar
+
+COPY ./docker/spark/requirements.txt /
+RUN pip install -r /requirements.txt
