@@ -30,7 +30,7 @@ temp_path = "/usr/local/spark/resources/temp/"
 first_execution = "/usr/local/spark/resources/first_execution.txt"
 
 dag_id = "spark-openaq-module"
-min_delta = 10
+min_delta = 5
 
 ###############################################
 # Callable functions

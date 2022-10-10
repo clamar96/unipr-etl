@@ -73,7 +73,7 @@ print("######################################")
     df_csv_sample.write
     .format("jdbc")
     .option("url", postgres_db)
-    .option("dbtable", "public.firewall")
+    .option("dbtable", "public.firewall_dag")
     .option("user", postgres_user)
     .option("password", postgres_pwd)
     .mode("overwrite")

@@ -17,6 +17,7 @@ spark = (
     .builder
     .getOrCreate()
 )
+
 sc = spark.sparkContext
 sc.setLogLevel("WARN")
 

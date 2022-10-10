@@ -28,7 +28,7 @@ From command line:
 ## POSTGRES ADMIN UI
 
 - Log-in with email ```admin@admin.com``` and password ```airflow```
-- Servers: right click --> Create --> Server
+- Servers: Create --> Server
 - General tab: Enter a name (ex. ```my_db```)
 - Connection tab: Enter ```docker_postgres_1``` as host, ```5432``` as port and ```airflow``` as db, username and password
 - Save
@@ -51,12 +51,12 @@ From command line:
 
 ## USEFUL COMMANDS
 
-Open container command line:    ```docker exec --user root -it <container_name> /bin/bash``` (esc crtl+z)
-Stop all containers:            ```docker stop $(docker ps -a –q)```
-Delete all containers:          ```docker rm $(docker ps -a -q)```
-Delete all volumes:             ```docker volume rm $(docker volume ls -q)```
+- Open container command line:    ```docker exec --user root -it <container_name> /bin/bash``` (esc crtl+z)
+- Stop all containers:            ```docker stop $(docker ps -a –q)```
+- Delete all containers:          ```docker rm $(docker ps -a -q)```
+- Delete all volumes:             ```docker volume rm $(docker volume ls -q)```
 
 ## RESOURCES
 
-Internet firewall dataset](https://archive.ics.uci.edu/ml/datasets/Internet+Firewall+Data)
-[]()
+[Internet firewall dataset](https://archive.ics.uci.edu/ml/datasets/Internet+Firewall+Data)
+[OpenAQ](https://registry.opendata.aws/openaq/)

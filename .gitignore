@@ -1,2 +1,6 @@
 *.ipynb_checkpoints
 *__pycache__
+notebooks/firewall.ipynb
+notebooks/openaq.ipynb
+spark/app/*
+dags/*
