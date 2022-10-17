@@ -17,7 +17,7 @@ From command line:
 
 - Enter in the project dir
 - Run the command ```docker build . -f ./docker/spark/Dockerfile.Spark -t spark-air```
-- Run the command ```docker build . -f ./docker/spark/Dockerfile.Airflow -t docker-airflow-spark```
+- Run the command ```docker build . -f ./docker/airflow /Dockerfile.Airflow -t docker-airflow-spark```
 - Run the command ```docker-compose -f docker/docker-compose.yaml up -d```
 - When all the services started successfully, go to:
 
